@@ -1,0 +1,11 @@
+button=findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                PopupMenu menu = new PopupMenu(MainActivity.this, button);
+                menu.getMenuInflater().inflate(R.menu.popupmenu,menu.getMenu());
+                menu.show();
+            }
+        });
